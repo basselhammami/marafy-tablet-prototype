@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MARAFY Tablet UI Prototypes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap">
+<style>
+  :root { --coral: #EA6759; --eastbay: #3F5277; --cream: #F6F0E6; --card: #FFFBF4; --line: #E6DCCB; --muted: #5F6B86; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--cream); color: var(--eastbay); font-family: "Figtree", Arial, sans-serif; display: flex; align-items: center; justify-content: center; padding: 48px 16px; }
+  main { width: 100%; max-width: 880px; }
+  .eyebrow { margin: 0 0 12px; font-size: 13px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+  h1 { margin: 0 0 12px; font-size: clamp(32px, 6vw, 52px); font-weight: 800; color: var(--coral); line-height: 1.1; }
+  .lede { margin: 0 0 32px; font-size: 18px; line-height: 1.5; color: var(--muted); max-width: 56ch; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  a.card { display: block; padding: 28px; background: var(--card); border: 1px solid var(--line); border-left: 6px solid var(--coral); color: inherit; text-decoration: none; transition: transform .2s, box-shadow .2s; }
+  a.card:hover, a.card:focus-visible { transform: translateY(-2px); box-shadow: 0 16px 32px -20px rgba(63,82,119,.5); outline: none; }
+  a.card.b { border-left-color: var(--eastbay); }
+  .card h2 { margin: 0 0 8px; font-size: 24px; font-weight: 800; }
+  .card p { margin: 0 0 16px; font-size: 16px; line-height: 1.5; color: var(--muted); }
+  .open { font-size: 15px; font-weight: 600; color: var(--coral); }
+  .how { margin-top: 32px; font-size: 15px; line-height: 1.6; color: var(--muted); }
+  .how b { color: var(--eastbay); }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">MARAFY · Submarine Experience</p>
+  <h1>Tablet UI prototypes</h1>
+  <p class="lede">Two design options for the guest and hostess tablets. Both work the same way; only the look differs. Best viewed on a tablet or desktop.</p>
+  <div class="grid">
+    <a class="card" href="dark.html">
+      <h2>Option A · Dark</h2>
+      <p>Deep marine screens, with coral only for live status and the main action.</p>
+      <span class="open">Open prototype →</span>
+    </a>
+    <a class="card b" href="coral.html">
+      <h2>Option B · Coral</h2>
+      <p>Follows the brand guidelines: flat Burnt Sienna guest screens, a white hostess panel.</p>
+      <span class="open">Open prototype →</span>
+    </a>
+  </div>
+  <p class="how"><b>How to try it:</b> use the bar at the bottom of a prototype to jump between steps. To reach the live controls, choose <b>Now playing</b>, press and hold the lock mark in the tablet’s bottom corner, then enter <b>2026</b>.</p>
+</main>
+</body>
+</html>
